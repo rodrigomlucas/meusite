@@ -6,7 +6,7 @@
 
 Projeto Primeiro Site.
 
-[clique aqui para acessar](https://rodrigomlucas.github.io/meusite/)
+[clique aqui para acessar](https://github.com/rodrigomlucas/meusite.git)
 
 
 ## Tecnologias
