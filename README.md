@@ -1,6 +1,6 @@
 # MeuSite
 
-![preview](./preview.jpg)
+![preview](./preview.jpeg)
 
 > Elaborado individualmente.
 
