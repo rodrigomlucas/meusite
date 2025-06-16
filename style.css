@@ -23,12 +23,12 @@ font-size: large;
 }
 .whats {
         
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     position: fixed;
-    bottom: 8px;
-    right: 8px;
+    bottom: 10px;
+    right: 10px;
 }
 
 
@@ -36,8 +36,9 @@ font-size: large;
 nav {
     text-align: center;
     background-color: #458ccf;
-    padding: 20px;
+    padding: 10px;
     width: auto;
+  
   }
   
   nav ul {
@@ -131,7 +132,7 @@ nav ul li a {
 
 .menu .drop a {
 
-  box-shadow: inset 0 0 5px #000008;
+  box-shadow: inset 0 0 4px #000008;
 
 }
 
@@ -148,8 +149,115 @@ nav ul li a {
   height: 50px;
   font-size: 20px;
   border-radius: 50px;
-  background-color: transparent;
+  background-color: transparet;
   border: 1px solid #000;
   cursor: pointer;
 
 }
+
+
+
+.section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+
+
+
+}
+
+.slider-content {
+  margin: 2%;
+  width: 400%;
+  display: flex;
+}
+
+.slider-content input, .img-mobile {
+  display: none;
+
+}
+
+.slide-box{
+  width: 25%;
+  height: auto;
+                       /*  aqui tinha position relative mas tirei porquw a imagem do carrosel estava sobrepondo o menu consultoria */
+  text-align: center;
+  transition: 1s;
+
+}
+
+
+.slide-box img {
+  width: 80%;
+  height: 70%;
+  
+}
+
+.nav-manual,.nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 38%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+  border: 1px solid rgb(221, 15, 50);
+  padding: 10px;
+  border-radius: 50%;
+ cursor: pointer;
+ transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+
+margin-right: 10px;
+}
+
+
+.nav-manual .manual-btn:hover {  
+  background-color:  rgb(224, 12, 47);
+
+}
+
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+
+    background-color: #ff0054;
+  
+  }
+
+  #radio1:checked ~ .primeiro{
+    margin-left: 0%;
+
+  }
+
+   #radio2:checked ~ .primeiro{
+    margin-left: -25%;
+
+  }
+
+   #radio3:checked ~ .primeiro{
+    margin-left: -50%;
+
+  }
+
+
+  @media screen and ( max-width:900px) {
+
+      .Img-desktop{
+        display: none;
+      }
+
+      .img-mobile{
+        display: block;
+      }
+
+      .nav-auto .nav-manual {
+        margin-top: 50%;
+
+      }
+
+  }
